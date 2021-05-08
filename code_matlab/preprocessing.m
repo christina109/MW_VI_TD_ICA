@@ -7,14 +7,14 @@ function EEG = preprocessing(data, stage)
 % stage 4: visually inspect components
 % stage 5: remove marked comps and visually inspect epochs again
 % stage 6: remove marked epochs 
-% Author: Christina Jin (christina.mik109@gmail.com)
+% Author: Christina Jin (cyj.sci@gmail.com)
 
 f_main = fileparts(which('mind_wandering2'));
 cd(f_main)
 
 % check input pars
 if numel(stage)~=1
-    error('One stage can be processed at one time!')
+    error('Please specify one stage')
 end
 
 % set pars
